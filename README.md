@@ -7,16 +7,16 @@
 # Saas-one
 ### 19 group comming soon web project
 
-This project is for educational porpuses only. Pull request are welcome, but priority for my real-life students! Thank you for your cooperation!
+This project is for educational porpuses only. Pull request are welcome. Thank you for your cooperation!
 
 
 
-Design: [Matrox]
+Design: [Matrox] 
 
 
 ## Project features
 - responsive design
 - animates clock
 - animated bars
-- 
+
 

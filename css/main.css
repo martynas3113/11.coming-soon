@@ -1,4 +1,6 @@
 /* Custom components in css  */
+
+/* layout */
 .container.hero {
     padding-bottom: var(--section-padding);
 }
@@ -14,3 +16,45 @@ footer.container {
 .bg-main-color {
     background-color: var(--main-color);
 }
+
+/* Hero content */
+.hero{
+    text-align: center;
+}
+.hero img {
+    height: 40px;
+    color: black;
+    margin-bottom: calc(var(--hero-space) * 2);
+}
+
+.hero h1 {
+    display: inline-block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: var(--hero-space);
+}
+
+
+
+.hero p {
+    width: 100%;
+    display: inline-block;
+    font-size: 18px;
+    color:#555 ;
+    margin-bottom: calc(var(--hero-space) * 3);
+}
+
+.hero .clock {
+    margin-bottom: calc(var(--hero-space) * 2 );
+}
+
+.hero .form {
+    margin-bottom: var(--hero-space);
+}
+
+
+}
+/* Main content */
+
+/* FOoter conttent */

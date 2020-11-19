@@ -6,16 +6,14 @@
     .container > .row-short {
         display: inline-block;
         width: 600px;
-        margin-left: calc(50% - 300px);
-        margin-right: calc(50% - 300px);
+        margin: 0 calc(50% - 300px);
         
         
     }
     .container > .row {
         display: inline-block;
         width: 1000px;
-        margin-left: calc(50% - 500px);
-        margin-right: calc(50% - 500px);
+        margin: 0 calc(50% - 500px);
         
         
     }
@@ -49,7 +47,7 @@
     .container > .row {
         display: inline-block;
         width: 600px;
-        margin-left: calc(50% - 300px);
+        margin: 0 calc(50% - 300px);
         
         
         
@@ -71,7 +69,7 @@
         .container > .row-short {
             display: inline-block;
             width: 100%;
-            margin-left: 0;
+            margin: 0;
             
             
         }
@@ -82,7 +80,7 @@
         }
         .container > .row > .column.right {
             width: 100%;
-            margin-left: 0px;
+            margin: 0px;
             margin-top: calc(var(--section-padding) * 2);
             
         }

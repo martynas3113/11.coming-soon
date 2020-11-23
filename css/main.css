@@ -81,23 +81,52 @@ main p {
     
     }
 
+    
+
 
 
 /* FOoter conttent */
+footer .fa {
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    line-height: 20px;
+    width: 40px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s;
+    border-radius: 50%;
+    
+
+}
+
+footer .fa:hover {
+    background-color: white;
+    color: var(--main-color);
+    
+}
+
 footer {
     text-align: center;
     line-height: 32px;
     font-size: 17px;
-    color: #fffa;
+    color:#fffa;
+    
 }
-    footer > .row {
+    footer.container > .row {
         border-bottom: 1px solid white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        gap:10px;
+        flex-wrap: wrap;
     }
 
     footer .text-trio > .text {
         padding: 0 10px;
         display: inline-block;
         position: relative;
+        
     }
 
         footer .text-trio > .text::before {
@@ -118,7 +147,8 @@ footer {
         }
     footer p {
          display: inline-block;
-         width: 100%;   
+         width: 100%;
+           
     }
 
     footer a {

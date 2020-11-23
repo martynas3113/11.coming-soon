@@ -126,3 +126,17 @@ footer {
 
     }
 
+
+    @media (max-width: 700px) {
+        footer .text-trio > .text {
+            padding: 0 ;
+            display: inline-block;
+            width: 100%;
+            
+        }
+
+        footer .text-trio > .text::before {
+            display: none;
+            
+        }
+    }

@@ -54,7 +54,33 @@ footer.container {
 }
 
 
-}
+
 /* Main content */
+
+main h2 {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: var(--main-space);
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+main p {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: var(--main-space);
+    font-size: 18px;
+    line-height: 26px;
+    color: #555;
+   
+}
+
+    main p > a {
+        color: var(--secondary-color);
+        text-decoration: none;
+    
+    }
+
+
 
 /* FOoter conttent */

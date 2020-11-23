@@ -1,5 +1,3 @@
-/* Custom components in css  */
-
 /* layout */
 .container.hero {
     padding-bottom: var(--section-padding);
@@ -17,156 +15,126 @@ footer.container {
     background-color: var(--main-color);
 }
 
-/* Hero content */
-.hero{
+/* hero */
+.hero {
     text-align: center;
 }
+
 .hero img {
     height: 40px;
-    color: black;
     margin-bottom: calc(var(--hero-space) * 2);
 }
-
 .hero h1 {
     display: inline-block;
     width: 100%;
+    margin-bottom: var(--hero-space);
     text-transform: uppercase;
     font-size: 50px;
-    margin-bottom: var(--hero-space);
+    color: #000;
 }
-
-
-
 .hero p {
-    width: 100%;
     display: inline-block;
-    font-size: 18px;
-    color:#555 ;
+    width: 100%;
     margin-bottom: calc(var(--hero-space) * 3);
+    font-size: 18px;
+    color: var(--grey-color);
 }
-
 .hero .clock {
-    margin-bottom: calc(var(--hero-space) * 2 );
+    margin-bottom: calc(var(--hero-space) * 2);
 }
-
 .hero .form {
     margin-bottom: var(--hero-space);
 }
 
-
-
-/* Main content */
-
+/* main content */
 main h2 {
     display: inline-block;
     width: 100%;
     margin-bottom: var(--main-space);
+    color: #000;
     font-size: 21px;
     text-transform: uppercase;
 }
-
 main p {
     display: inline-block;
     width: 100%;
     margin-bottom: var(--main-space);
     font-size: 18px;
     line-height: 26px;
-    color: #555;
-   
+    color: var(--grey-color);
 }
-
     main p > a {
         color: var(--secondary-color);
-        text-decoration: none;
-    
+        text-decoration-line: none;
     }
 
-    
-
-
-
-/* FOoter conttent */
-footer .fa {
-    display: inline-block;
-    color: white;
-    padding: 10px;
-    line-height: 20px;
-    width: 40px;
-    text-decoration: none;
-    text-align: center;
-    transition: all 0.5s;
-    border-radius: 50%;
-    
-
-}
-
-footer .fa:hover {
-    background-color: white;
-    color: var(--main-color);
-    
-}
-
+/* footer */
 footer {
     text-align: center;
     line-height: 32px;
     font-size: 17px;
-    color:#fffa;
-    
+    color: #fffa;
 }
     footer.container > .row {
-        border-bottom: 1px solid white;
-        padding: 10px 20px;
         display: flex;
         justify-content: center;
-        gap:10px;
         flex-wrap: wrap;
+        gap: 10px;
+        padding: 10px 20px;
+        border-bottom: 1px solid #fff;
     }
-
-    footer .text-trio > .text {
-        padding: 0 10px;
+    footer .fa {
         display: inline-block;
-        position: relative;
-        
+        width: 40px;
+        padding: 10px;
+        line-height: 20px;
+        color: #fff;
+        text-align: center;
+        border-radius: 50%;
+        transition: all 0.5s;
     }
-
-        footer .text-trio > .text::before {
-            display: inline-block;
-            content: '';
-            width: 1px;
-            height: 14px;
+        footer .fa:hover {
             background-color: #fff;
-            position: absolute;
-            left: -2px;
-            top:50%;
-            transform: translateY(-50%);
+            color: var(--main-color);
         }
-
-        footer .text-trio > .text:first-of-type::before {
-            display: none;
-            
-        }
-    footer p {
-         display: inline-block;
-         width: 100%;
-           
+    footer .text-trio {
+        display: inline-block;
+        width: 100%;
     }
-
+        footer .text-trio > .text {
+            display: inline-block;
+            padding: 0 10px;
+            position: relative;
+        }
+            footer .text-trio > .text::before {
+                display: inline-block;
+                content: '';
+                width: 1px;
+                height: 14px;
+                background-color: #fff;
+                position: absolute;
+                top: 50%;
+                left: -2px;
+                transform: translateY(-50%);
+            }
+            footer .text-trio > .text:first-of-type::before {
+                display: none;
+            }
+    footer p {
+        display: inline-block;
+        width: 100%;
+    }
     footer a {
         color: #fff;
-
+        text-decoration: none;
     }
 
-
-    @media (max-width: 700px) {
-        footer .text-trio > .text {
-            padding: 0 ;
-            display: inline-block;
-            width: 100%;
-            
-        }
-
+@media (max-width: 700px) {
+    footer .text-trio > .text {
+        width: 100%;
+        padding: 0;
+    }
         footer .text-trio > .text::before {
             display: none;
-            
         }
-    }
+}

@@ -84,3 +84,45 @@ main p {
 
 
 /* FOoter conttent */
+footer {
+    text-align: center;
+    line-height: 32px;
+    font-size: 17px;
+    color: #fffa;
+}
+    footer > .row {
+        border-bottom: 1px solid white;
+    }
+
+    footer .text-trio > .text {
+        padding: 0 10px;
+        display: inline-block;
+        position: relative;
+    }
+
+        footer .text-trio > .text::before {
+            display: inline-block;
+            content: '';
+            width: 1px;
+            height: 14px;
+            background-color: #fff;
+            position: absolute;
+            left: -2px;
+            top:50%;
+            transform: translateY(-50%);
+        }
+
+        footer .text-trio > .text:first-of-type::before {
+            display: none;
+            
+        }
+    footer p {
+         display: inline-block;
+         width: 100%;   
+    }
+
+    footer a {
+        color: #fff;
+
+    }
+

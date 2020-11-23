@@ -81,6 +81,92 @@ main p {
     
     }
 
+    
+
 
 
 /* FOoter conttent */
+footer .fa {
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    line-height: 20px;
+    width: 40px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s;
+    border-radius: 50%;
+    
+
+}
+
+footer .fa:hover {
+    background-color: white;
+    color: var(--main-color);
+    
+}
+
+footer {
+    text-align: center;
+    line-height: 32px;
+    font-size: 17px;
+    color:#fffa;
+    
+}
+    footer.container > .row {
+        border-bottom: 1px solid white;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        gap:10px;
+        flex-wrap: wrap;
+    }
+
+    footer .text-trio > .text {
+        padding: 0 10px;
+        display: inline-block;
+        position: relative;
+        
+    }
+
+        footer .text-trio > .text::before {
+            display: inline-block;
+            content: '';
+            width: 1px;
+            height: 14px;
+            background-color: #fff;
+            position: absolute;
+            left: -2px;
+            top:50%;
+            transform: translateY(-50%);
+        }
+
+        footer .text-trio > .text:first-of-type::before {
+            display: none;
+            
+        }
+    footer p {
+         display: inline-block;
+         width: 100%;
+           
+    }
+
+    footer a {
+        color: #fff;
+
+    }
+
+
+    @media (max-width: 700px) {
+        footer .text-trio > .text {
+            padding: 0 ;
+            display: inline-block;
+            width: 100%;
+            
+        }
+
+        footer .text-trio > .text::before {
+            display: none;
+            
+        }
+    }

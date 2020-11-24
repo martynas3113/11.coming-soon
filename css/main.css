@@ -3,10 +3,9 @@
     padding-bottom: var(--section-padding);
     background-image: url(../images/hero-image.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-position: bottom center;
     background-attachment: fixed;
     min-height: 100vh;
-    
 }
 
 footer.container {

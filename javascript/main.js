@@ -8,5 +8,4 @@ renderSocials('footer > .row', socialsData);
 
 renderClock('.clock');
 
-// renderProgressBar('.column.left', 'Web development',90);
 renderAllProgressBars(progressBarData);

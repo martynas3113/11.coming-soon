@@ -1,6 +1,7 @@
 .progress-bar {
     display: inline-block;
     width: 100%;
+    margin-top: 30px;
 }
     .progress-bar + .progress-bar {
         margin-top: 30px;

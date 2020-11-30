@@ -104,6 +104,7 @@ footer {
         gap: 10px;
         padding: 10px 20px;
         border-bottom: 1px solid #fff;
+        position: relative;
     }
     footer .fa {
         display: inline-block;
@@ -115,6 +116,13 @@ footer {
         border-radius: 50%;
         transition: all 0.5s;
     }
+    
+    footer .btn.circle {
+        position: absolute;
+        top: -24px;
+        right: -13px;
+    }
+        
         footer .fa:hover {
             background-color: #fff;
             color: var(--main-color);

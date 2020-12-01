@@ -1,3 +1,5 @@
+/* custom CSS - everything else, that wasn't styled with components css */
+
 /* layout */
 .container.hero {
     padding-bottom: var(--section-padding);
@@ -50,15 +52,14 @@ footer.container {
 .hero .form {
     width: 90%;
     margin: 0 5% var(--hero-space);
-
 }
-    .hero .form > input {
+    .hero .form > input:not(.btn) {
         width: 100%;
         color: #fff;
         background-color: transparent;
         border-bottom-color: #fff;
     }
-        .hero .form > input::placeholder {
+        .hero .form > input:not(.btn)::placeholder {
             color: #fff;
         }
     .hero .form > .btn {
@@ -87,9 +88,10 @@ main p {
         text-decoration-line: none;
     }
 
-main .form .btn {
-    float:right;
+main .form > .btn {
+    float: right;
 }
+
 /* footer */
 footer {
     text-align: center;
@@ -106,7 +108,7 @@ footer {
         border-bottom: 1px solid #fff;
         position: relative;
     }
-    footer .fa {
+    footer .social.fa {
         display: inline-block;
         width: 40px;
         padding: 10px;
@@ -116,17 +118,15 @@ footer {
         border-radius: 50%;
         transition: all 0.5s;
     }
-    
+        footer .social.fa:hover {
+            background-color: #fff;
+            color: var(--main-color);
+        }
     footer .btn.circle {
         position: absolute;
         top: -24px;
         right: -13px;
     }
-        
-        footer .fa:hover {
-            background-color: #fff;
-            color: var(--main-color);
-        }
     footer .text-trio {
         display: inline-block;
         width: 100%;

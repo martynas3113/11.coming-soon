@@ -1,4 +1,4 @@
-import { isValidEmail, isValidName, isValidText } from './validationRules.js';
+import { validation } from './validationRules.js';
 
 function formValidator(selector) {
     const formDOM = document.querySelector(selector);
@@ -8,6 +8,11 @@ function formValidator(selector) {
     const allTextareaDOMs = formDOM.querySelectorAll('textarea');
 
     const allElements = [...allInputDOMs, ...allTextareaDOMs];
+
+    if(allElements === 0 ) {
+        console.error('ERROR: formoje nerasta nei vieno input arba textarea elemento');
+        return false;
+    }
 
     if(!submitBtnDOM) {
         console.error('ERROR: formoje nerastas submit mygtukas');
@@ -19,37 +24,19 @@ function formValidator(selector) {
         console.clear();
 
         for (let input of allElements) {
-            const validationRule = input.dataset.validation;
+            const validationRule = input.dataset.validation; // HTML = data-validation
             const text = input.value;
 
-            const nameError = isValidName(text);
-            const emailError = isValidEmail(text);
-            const textError = isValidText(text);
-
-            if(validationRule ==='name') {
-                const nameError = isValidName(text);
-                    if(nameError !== true){
-                        console.log(nameError);
-                        errorCount++
-                    }
+            const validationFunction = validation[validationRule];
+            const error = validationFunction(text)
+                if(error !== true){
+                    console.log(error);
+                    errorCount++
+                }
             }
-
-            if (validationRule === 'name' && nameError !== true) {
-                console.log(nameError);
-                errorCount++;
-            }
-            if (validationRule === 'email' && emailError !== true) {
-                console.log(emailError);
-                errorCount++;
-            }
-            if (validationRule === 'text' && textError !== true) {
-                console.log(textError);
-                errorCount++;
-            }
-        }
-
+            
         if (errorCount === 0) {
-            console.log('Siumciam info...');
+            console.log('Siunciam info...');
         }
     })
 }

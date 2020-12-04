@@ -1,6 +1,14 @@
 import { validation } from './validationRules.js';
 
-function formValidator(selector) {
+/**
+ * Formos validavima atliekanti funkcija, kuri automatiskai  pazista kokiems ivesties laukams kokias reikia taikyti validavcijos taiskyles ir pagal tai atvaizuduoja atititnkamus pranesimus 
+ * @param {String} selector CSS like selector
+ * @param {Object} toastObject Objektas i kuri reikia kreiptis, norint atvaizduoti pranesimus: Tiek sekmes, tiek klaidos.
+ * @returns {Boolean} Funkcijai sekmingai suveikus, grazinamas `True` priesingu atveju `False`;
+ */
+
+function formValidator(selector, toastObject) {
+
     const formDOM = document.querySelector(selector);
     const submitBtnDOM = formDOM.querySelector('input[type="submit"]');
 
@@ -9,13 +17,14 @@ function formValidator(selector) {
 
     const allElements = [...allInputDOMs, ...allTextareaDOMs];
 
-    if(allElements === 0 ) {
+    if (allElements === 0) {
+        toastObject.show('error', 'ERROR: formoje nerasta nei vieno input arba textarea elemento')
         console.error('ERROR: formoje nerasta nei vieno input arba textarea elemento');
         return false;
     }
 
-    if(!submitBtnDOM) {
-        console.error('ERROR: formoje nerastas submit mygtukas');
+    if (!submitBtnDOM) {
+        toastObject.show('error', 'ERROR: formoje nerastas submit mygtukas')
         return false;
     }
 
@@ -29,16 +38,21 @@ function formValidator(selector) {
 
             const validationFunction = validation[validationRule];
             const error = validationFunction(text)
-                if(error !== true){
-                    console.log(error);
-                    errorCount++
-                }
+            if (error !== true) {
+                toastObject.show('error', error)
+                console.log(error);
+                errorCount++
+                break //Klaidos pranesimas rodomas ties pirma sutikta klaida.
             }
-            
+        }
+
         if (errorCount === 0) {
-            console.log('Siunciam info...');
+            toastObject.show('success', 'Siunciam info...');
+
         }
     })
+
+    return true;
 }
 
 export { formValidator }

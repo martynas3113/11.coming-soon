@@ -1,4 +1,4 @@
-function countTimeDiff() {
+function countTime() {
 
     // einamieji metai  (2020)
     const date = new Date();
@@ -39,4 +39,4 @@ function countTimeDiff() {
     }
 }
 
-export { countTimeDiff }
+export { countTime }

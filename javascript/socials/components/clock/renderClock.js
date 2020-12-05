@@ -1,4 +1,4 @@
-import { countTimeDiff } from './countTimeDiff.js';
+import { countTime} from './countTime.js';
 
 // Target date is New Year evening. 
 // 2021-01-01 00:00:00
@@ -23,7 +23,7 @@ function renderClock(selector) {
         return false;
     }
 
-    const time = countTimeDiff();
+    const time = countTime();
 
     const HTML = `<div class="time-box">
                     <div class="time">${time.days}</div>
@@ -49,7 +49,7 @@ function renderClock(selector) {
     let timePassed = 0;
 
     setInterval(() => {
-        const time = countTimeDiff();
+        const time = countTime();
         timesDOM[0].innerText = time.days;
         timesDOM[1].innerText = time.hours;
         timesDOM[2].innerText = time.minutes;

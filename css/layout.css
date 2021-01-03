@@ -1,17 +1,18 @@
 .container {
     display: grid;
-    grid-template-columns: 1fr 200px 300px 300px 200px 1fr;
     width: 100%;
     padding: calc(var(--section-padding) * 2) 0;
+    grid-template-columns: 1fr 200px 300px 300px 200px 1fr;
 }
     .container > .row-short {
         display: inline-block;
         grid-column: 3 / 5;
+
     }
-    .container > .row {
-        display: inline-block;
-        grid-column: 2 / 6;
-    }
+        .container > .row {
+            display: inline-block;
+            grid-column: 2 / 6;
+        }
         .container > .row > .column {
             display: inline-block;
             float: left;
@@ -22,33 +23,29 @@
             .container > .row > .column.right {
                 width: 40%;
                 margin-left: 10%;
-            }
-
+            }  
 @media (max-width: 1100px) {
     .container {
         grid-template-columns: 1fr 100px 300px 300px 100px 1fr;
     }
 }
-
 @media (max-width: 900px) {
     .container {
         grid-template-columns: 1fr 300px 300px 1fr;
     }
-        .container > .row-short,
-        .container > .row {
-            grid-column: 2 / 4;
-        }
+    .container > .row-short,
+    .container > .row {
+        grid-column: 2 / 4;
+    }
 }
-
 @media (max-width: 700px) {
     .container {
         grid-template-columns: 20px 1fr 20px;
     }
         .container > .row-short,
         .container > .row {
-            grid-column: 2 / 3;
+                grid-column: 2 / 3;
         }
-    
             .container > .row > .column.left {
                 width: 100%;
             }

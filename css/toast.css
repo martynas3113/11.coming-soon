@@ -4,13 +4,15 @@
     position: fixed;
     left: 50%;
     bottom: 30px;
-    transform: translateX(-50%);
+    transform: translateX(-50%); /*horizantalai elementa atitraukti per puse elemento plocio*/
     background-color: #fff;
     box-shadow: 0 2px 8px #0008;
+
 }
     .toast.visible {
         display: block;
     }
+
     .toast > .fa {
         display: inline-block;
         float: left;
@@ -37,6 +39,7 @@
         .toast.error > .fa.fa-shield {
             display: inline-block;
         }
+
     .toast > p {
         display: inline-block;
         float: left;

@@ -1,80 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Coming soon</title>
-        <link rel="shortcut icon" href="/favicon.png" type="image/png">
-        <!-- reset/init -->
-        <link rel="stylesheet" href="./css/variables.css">
-        <link rel="stylesheet" href="./css/reset.css">
-        <link rel="stylesheet" href="./css/layout.css">
-        <!-- 3rd party css -->
-        <link rel="stylesheet" href="./css/font-awesome.min.css">
-        <!-- component -->
-        <link rel="stylesheet" href="./css/button.css">
-        <link rel="stylesheet" href="./css/clock.css">
-        <link rel="stylesheet" href="./css/form.css">
-        <link rel="stylesheet" href="./css/mouse.css">
-        <link rel="stylesheet" href="./css/progress-bar.css">
-        <link rel="stylesheet" href="./css/toast.css">
-        <!-- custom -->
-        <link rel="stylesheet" href="./css/main.css">
-    </head>
-    
-    <body>
-        <div class="container hero bg-main-color">
-            <div class="row-short">
-                <img src="./images/logo.png" alt="Logo">
-                <h1>Coming soon</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse quisquam fugiat facilis asperiores, quo harum?</p>
-                <div class="clock"></div>
-                <form class="form">
-                    <input type="email" placeholder="Email" required data-validation="email">
-                    <input type="submit" value="Subscribe now!" class="btn">
-                    <!-- <div class="btn">Subscribe now!</div> -->
-                </form>
-                </form>
-                <div class="mouse">
-                    <div class="wheel"></div>
-                </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming soon</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/png">
+    <!--reset/init-->
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <!--3d-->
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <!--component-->
+    <link rel="stylesheet" href="./css/button.css">
+    <link rel="stylesheet" href="./css/clock.css">
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/mouse.css">
+    <link rel="stylesheet" href="./css/progress-bar.css">
+    <link rel="stylesheet" href="./css/toast.css">
+    <!--custom-->
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+
+<body>
+    <div class="container hero bg-main-color">
+        <div class="row-short">
+            <img src="./img/logo.png" alt="logo">
+            <h1>Coming soon</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse, nisi iste. Cumque quibusdam eveniet amet expedita, voluptate illo similique ut eligendi, placeat dolor magnam error tempora unde quisquam, eum delectus?</p>
+            <div class="clock"></div>
+            <form class="form">
+                <input type="email" placeholder="Email" required data-validation="email">
+                <input type="submit" value="Subscribe now!" class="btn">
+                <!--<div class="btn">Subscribe now!</div>-->
+            </form>
+            <div class="mouse">
+                <div class="wheel"></div>
             </div>
         </div>
-        <main class="container">
-            <div class="row">
-                <div class="column left">
-                    <h2>About startup</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit temporibus labore, <a href="#">Matrox</a> veniam tenetur ea quaerat cumque dolor distinctio.</p>
-                    
-                </div>
-                <div class="column right">
-                    <h2>Have any question?</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo doloribus quisquam <a href="mailto:vardenis@pastelis.xyz">vardenis@pastelis.xyz</a> natus autem dolorem. Eaque, molestias assumenda.</p>
-                    <form class="form">
-                        <input type="text" placeholder="Name" data-validation="name">
-                        <input type="email" placeholder="Email" required data-validation="email">
-                        <textarea maxlength="1000" placeholder="Message" required data-validation="text"></textarea>
-                        <input type="submit" value="Send message" class="btn">
-                        <!-- <div class="btn">Send message</div> -->
-                    </form>
-                </div>
+    </div>
+    <main class="container">
+        <div class="row">
+            <div class="column left">
+                <h2>About startup</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus impedit temporibus labore, <a href="#">Matrox</a> veniam tenetur ea quaerat cumque dolor distinctio.</p>
             </div>
-        </main>
-        <footer class="container bg-main-color">
-            <div class="row">
-                <a href="#" class="btn btn-secondary-color circle fa fa-angle-up"></a>
+            <div class="column right">
+                <h2>Have any question?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia explicabo doloribus quisquam <a href="mailto:vardenis@pastelis.xyz">vardenis@pastelis.xyz</a> natus autem dolorem. Eaque, molestias assumenda.</p>
+                <form class="form">
+                    <!--place holderiai gali but skirtingi dalykai bet data validation yra kaip taisykliu rinkiys pagal kurias taisyklingai vartotojas irasys reikiama dalyka-->
+                    <input type="text" placeholder="Name" data-validation="name">
+                    <input type="email" placeholder="Email" required data-validation="email">
+                    <textarea maxlength="1000" placeholder="Message" required data-validation="text"></textarea>
+                    <input type="submit" value="Send message" class="btn">
+                    <!-- <div class="btn">Send message</div> -->
+                </form>
             </div>
-            <div class="row-short">
-                <img src="#" alt="matrox logo">
-                <div class="text-trio">
-                    <div class="text">Copyright &copy; 2020 <a href="#">Matrox</a></div>
-                    <div class="text">All rights reserved</div>
-                    <div class="text">Designed by <a href="#">TrendyTheme</a></div>
-                </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias <a href="#">200+</a> quia consequuntur distinctio libero qui atque incidunt <a href="#">Matrox</a> saepe nemo.</p>
+        </div>
+    </main>
+    <footer class="container bg-main-color">
+        <div class="row">
+            <a href="#" class="btn btn-secondary-color circle fa fa-angle-up"></a>
+        </div>
+        <div class="row-short">
+            <img src="./img/footerio-logo.png" alt="matrox logo">
+            <div class="text-trio">
+                <div class="text">Copyright &copy; 2020 <a href="#">Matrox</a></div>
+                <div class="text">All rights reserved</div>
+                <div class="text">Designed by <a href="#">TrendyTheme</a></div>
             </div>
-        </footer>
-    
-        <script src="./javascript/main.js" type="module"></script>
-    </body>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam <a href="#">200+</a>, nam atque molestias illum voluptas modi repellat, ex <a href="#">Matrox</a> dolor esse sunt deleniti debitis necessitatibus pariatur in exercitationem dolorum, asperiores alias quae?</p>
+        </div>
+    </footer>
+
+    <script src="./js/main.js" type="module"></script>
+</body>
+
 </html>

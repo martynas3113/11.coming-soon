@@ -47,7 +47,7 @@ function formValidator(selector, toastObject) {
         }
 
         if (errorCount === 0) {
-            toastObject.show('success', 'Siunciam info...');
+            toastObject.show( 'Siunciam info...');
 
         }
     })

@@ -4,7 +4,7 @@
     padding: 10px 30px;
     background-color: var(--secondary-color);
     opacity: 0.9;
-    color: #fff;
+    color: white;
     font-size: 18px;
     line-height: 20px;
     border-radius: 4px;
@@ -13,10 +13,10 @@
     text-align: center;
     border: none;
 }
-    .btn:hover {
-        box-shadow: 0 4px 10px #000a;
-        opacity: 1;
-    }
+.btn:hover {
+    box-shadow: 0 4px 10px #000c;
+    opacity: 1;
+}
     .btn.circle {
         padding: 10px;
         width: 40px;
@@ -35,8 +35,8 @@
             color: var(--main-color);
         }
     .btn.btn-secondary-color {
-        background-color: var(--secondary-color);
-        color: #fff;
+    background-color: var(--secondary-color);
+    color: #fff;
     }
         .btn.btn-secondary-color:hover {
             background-color: var(--secondary-color);
@@ -45,4 +45,4 @@
         .btn.btn-secondary-color.btn-hover-invert:hover {
             background-color: #fff;
             color: var(--secondary-color);
-        }
+        } 

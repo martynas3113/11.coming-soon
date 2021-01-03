@@ -1,3 +1,4 @@
+
 .hero .clock {
     display: inline-block;
     width: 100%;
@@ -10,9 +11,9 @@
         color: #fff;
     }
         .clock .time-box > .time {
-            font-size: 50px;
+                font-size: 50px;
         }
-
+    
 @media (max-width: 700px){
     .clock .time-box {
         width: 50%;
@@ -24,6 +25,6 @@
 }
 @media (max-width: 300px){
     .clock .time-box {
-        width: 100%;
+         width: 100%;
     }
-}
+} 

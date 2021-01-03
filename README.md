@@ -13,6 +13,8 @@ This project is for educational porpuses only. Pull request are welcome. Thank y
 
 Design: [Matrox] 
 
+Project published at: https://martynas3113.github.io/11.coming-soon/
+
 
 ## Project features
 - responsive design
